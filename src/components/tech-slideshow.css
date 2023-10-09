@@ -1,0 +1,69 @@
+.tech-slideshow {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  /*border: orange solid 2px;*/
+  width: 100%;
+  margin-top: 0px;
+  /*margin-top: 2.4rem;*/
+
+  /*background-color: var(--dark-aluminium);*/
+
+  /*/color: var(--light-aluminium);
+  font-weight: 500;
+  text-align: center;
+
+  /* responsive */
+
+  font-size: 1.6rem;
+  line-height: 200px;
+  /*2.4rem;*/
+
+
+
+  height: 130px;
+  /*max-width: 1400px; /*margin: 0 0 0 0;/*auto*/
+  /*margin-top: 500px;
+    /*position: absolute;*/
+  /*top: 500px;/*387px;*/
+  /*position: relative;*/
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  /*border: green solid 4px;*/
+}
+
+.tech-slideshow>div {
+  /*border: yellow solid 4px;*/
+  height: 200px;
+  width: 2526px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow .mover-1 {
+  /*border: yellow solid 4px;*/
+  animation: moveSlideshow 12s linear infinite;
+}
+
+.tech-slideshow .mover-2 {
+  /*border: blue solid 4px;*/
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 15s linear infinite;
+}
+
+.tech-slideshow:hover .mover-2 {
+  opacity: 1;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
