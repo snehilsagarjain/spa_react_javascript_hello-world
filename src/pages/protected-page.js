@@ -1,4 +1,3 @@
-import { useAuth0 } from "@auth0/auth0-react";
 import React, { useEffect, useState } from "react";
 import { CodeSnippet } from "../components/code-snippet";
 import { PageLayout } from "../components/page-layout";
@@ -7,14 +6,11 @@ import { getProtectedResource } from "../services/message.service";
 export const ProtectedPage = () => {
   const [message, setMessage] = useState("");
 
-  const { getAccessTokenSilently } = useAuth0();
-
   useEffect(() => {
     let isMounted = true;
 
     const getMessage = async () => {
-      const accessToken = await getAccessTokenSilently();
-      const { data, error } = await getProtectedResource(accessToken);
+      const { data, error } = await getProtectedResource();
 
       if (!isMounted) {
         return;
@@ -34,7 +30,7 @@ export const ProtectedPage = () => {
     return () => {
       isMounted = false;
     };
-  }, [getAccessTokenSilently]);
+  }, []);
 
   return (
     <PageLayout>
