@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../project/spa_react_javascript_hello-world"
+		},
+		{
+			"path": "../auth0-react"
+		},
+		{
+			"path": "../sagar-fashions"
+		},
+		{
+			"path": "../auth0-express-api-samples"
+		},
+		{
+			"path": "../api_express_javascript_hello-world"
+		},
+		{
+			"path": "../spa_react/spa_react_javascript_hello-world"
+		}
+	]
+}
