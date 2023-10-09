@@ -1,8 +1,8 @@
 import React from "react";
-import { PageFooterHyperlink } from "./page-footer-hyperlink";
+//import { PageFooterHyperlink } from "./page-footer-hyperlink";
 
 export const PageFooter = () => {
-  const resourceList = [
+  /*const resourceList = [
     {
       path: "https://auth0.com/why-auth0/",
       label: "Why Auth0",
@@ -20,9 +20,15 @@ export const PageFooter = () => {
       label: "Contact an Expert",
     },
   ];
-
+  */
   return (
     <footer className="page-footer">
+      <div className="footer">
+        <div className="about"> About Company </div>
+        <div className="space"> </div>
+        <div className="contact"> Company Contact </div>
+      </div>
+      {/*
       <div className="page-footer-grid">
         <div className="page-footer-grid__info">
           <div className="page-footer-info__message">
@@ -81,6 +87,7 @@ export const PageFooter = () => {
           </div>
         </div>
       </div>
+            */}
     </footer>
   );
 };
